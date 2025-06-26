@@ -8,7 +8,7 @@ Sign Up: Pendaftaran akun baru menggunakan email asli dan kata sandi(terserah ti
 
 ![img_1.png](img_1.png)
 
-Login: Login ke akun yang sudah terdaftar menggunakan Supabase Auth.
+Login: Login ke akun yang sudah terdaftar menggunakan Supabase.
 
 ![img.png](img.png)
 
