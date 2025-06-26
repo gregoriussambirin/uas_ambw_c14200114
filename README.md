@@ -1,6 +1,5 @@
-# uas_c14200114
+# Simple Recipe Keeper App (Supabase)
 
-Simple Recipe Keeper App (Supabase Version)
 Aplikasi Flutter sederhana untuk menyimpan dan mengelola resep masakan pribadi, menggunakan Supabase untuk backend.
 
 Fitur Aplikasi
