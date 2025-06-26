@@ -6,11 +6,17 @@ Aplikasi Flutter sederhana untuk menyimpan dan mengelola resep masakan pribadi, 
 Fitur Aplikasi
 
 Autentikasi Pengguna:
+
 Sign Up: Pendaftaran akun baru menggunakan email asli dan kata sandi(terserah tidak menggunakan yang sama dengan akun email) melalui Supabase Auth.
+
 ![img_1.png](img_1.png)
+
 Login: Login ke akun yang sudah terdaftar menggunakan Supabase Auth.(dummy account : nizgsw5992@gmail.com = password123 ; c14200114@john.petra.ac.id = password123)
+
 ![img.png](img.png)
+
 Sign Out: Keluar dari akun menggunakan button di kanan atas.
+
 ![img_2.png](img_2.png)
 
 Penyimpanan Data Resep:
@@ -19,9 +25,13 @@ Setiap resep terhubung dengan UID pengguna yang login melalui kolom user_id.
 Tampilan daftar resep yang tersimpan dengan real-time update.
 Edit resep dengan klik button panah bawah kemudian klik button pencil warna biru.
 Fungsionalitas hapus resep klik button panah bawah untuk membuka detail kemudian klik button trash can warna merah.
+
 ![img_3.png](img_3.png)
+
 ![img_4.png](img_4.png)
+
 ![img_6.png](img_6.png)
+
 ![img_5.png](img_5.png)
 
 Persistensi Sesi Login:
@@ -30,6 +40,7 @@ Supabase Flutter secara otomatis menangani persistensi sesi login.
 Get Started Screen (Halaman Pengantar):
 Halaman selamat datang yang hanya muncul sekali saat aplikasi pertama kali diinstal (menggunakan shared_preferences).
 Setelah pertama kali dibuka, aplikasi akan langsung menuju halaman login atau halaman utama jika sudah login.
+
 ![img_7.png](img_7.png)
 
 Tool yang Digunakan
@@ -67,6 +78,7 @@ description: text
 ingredients: text[] (array of text)
 created_at: timestamp with time zone (Default Value: now())
 Aktifkan Row Level Security (RLS) untuk tabel recipes.
+
 ![img_8.png](img_8.png)
 
 Buat Policy RLS:
