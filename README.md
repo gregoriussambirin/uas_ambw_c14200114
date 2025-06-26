@@ -11,7 +11,7 @@ Sign Up: Pendaftaran akun baru menggunakan email asli dan kata sandi(terserah ti
 
 ![img_1.png](img_1.png)
 
-Login: Login ke akun yang sudah terdaftar menggunakan Supabase Auth.(dummy account : nizgsw5992@gmail.com = password123 ; c14200114@john.petra.ac.id = password123)
+Login: Login ke akun yang sudah terdaftar menggunakan Supabase Auth.
 
 ![img.png](img.png)
 
