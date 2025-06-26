@@ -4,8 +4,6 @@ Aplikasi Flutter sederhana untuk menyimpan dan mengelola resep masakan pribadi, 
 
 Fitur Aplikasi
 
-Autentikasi Pengguna:
-
 Sign Up: Pendaftaran akun baru menggunakan email asli dan kata sandi(terserah tidak menggunakan yang sama dengan akun email) melalui Supabase Auth.
 
 ![img_1.png](img_1.png)
