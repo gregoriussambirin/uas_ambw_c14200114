@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Registration successful! Please login.')),
         );
-        Navigator.of(context).pop(); // Go back to login page
+        Navigator.of(context).pop(); 
       } on AuthException catch (e) {
         setState(() {
           _errorMessage = e.message;

@@ -25,8 +25,8 @@ class _LoginScreenState extends State<LoginScreen> {
           email: _emailController.text,
           password: _passwordController.text,
         );
-        // On successful login, navigate to HomeScreen and remove all previous routes
-        // The StreamBuilder in main.dart will automatically handle navigation
+        
+        
       } on AuthException catch (e) {
         setState(() {
           _errorMessage = e.message;

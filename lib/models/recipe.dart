@@ -1,10 +1,10 @@
 class Recipe {
-  final String id; // UUID dari Supabase
-  final String userId; // user_id dari Supabase Auth
+  final String id; 
+  final String userId; 
   final String name;
   final String description;
-  final List<dynamic> ingredients; // Supabase mengembalikan List<dynamic> untuk text[]
-  final DateTime createdAt; // created_at dari Supabase
+  final List<dynamic> ingredients; 
+  final DateTime createdAt; 
 
   Recipe({
     required this.id,
@@ -15,28 +15,28 @@ class Recipe {
     required this.createdAt,
   });
 
-  // Factory constructor untuk membuat objek Recipe dari Map Supabase
+  
   factory Recipe.fromSupabase(Map<String, dynamic> data) {
-    // Pastikan semua data yang diakses tidak null sebelum di-cast
-    // Gunakan pengecekan null yang aman dan berikan nilai default jika null
+    
+    
     return Recipe(
-      id: data['id'] as String, // ID harus selalu ada jika ini dari database
-      userId: data['user_id'] as String, // user_id harus selalu ada jika RLS benar
-      name: data['name'] as String? ?? 'No Name', // Tambahkan 'as String?' untuk null safety
+      id: data['id'] as String, 
+      userId: data['user_id'] as String, 
+      name: data['name'] as String? ?? 'No Name', 
       description: data['description'] as String? ?? 'No Description',
-      ingredients: (data['ingredients'] as List<dynamic>?) ?? [], // Cast ke List<dynamic>? lalu berikan default
+      ingredients: (data['ingredients'] as List<dynamic>?) ?? [], 
       createdAt: DateTime.parse(data['created_at'] as String? ?? DateTime.now().toIso8601String()),
     );
   }
 
-  // Metode untuk mengonversi objek Recipe menjadi Map untuk disimpan di Supabase
+  
   Map<String, dynamic> toSupabase() {
     return {
       'user_id': userId,
       'name': name,
       'description': description,
       'ingredients': ingredients,
-      // created_at akan diisi otomatis oleh Supabase saat insert
+      
     };
   }
 }
